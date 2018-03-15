@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>830440081263-8mnks61oms4ttil5naio3ujf25cmq1st.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.830440081263-8mnks61oms4ttil5naio3ujf25cmq1st</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA2QZiAeQDoOCzmBOGWLNwAvXckQpSAwTY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>830440081263</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>house603.com.Cashew</string>
+	<key>PROJECT_ID</key>
+	<string>cashew-13e6a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>cashew-13e6a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:830440081263:ios:9a769a31855eb868</string>
+	<key>DATABASE_URL</key>
+	<string>https://cashew-13e6a.firebaseio.com</string>
+</dict>
+</plist>

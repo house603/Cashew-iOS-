@@ -7,13 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C136CE5205273600069EA0C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C136CE4205273600069EA0C /* GoogleService-Info.plist */; };
+		5C136CE8205A2D060069EA0C /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C136CE7205A2D060069EA0C /* UserSettings.swift */; };
+		5C68358720512494000046B2 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C68358620512494000046B2 /* TestViewController.swift */; };
 		5C82EB8F20493C74008BAFB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C82EB8E20493C74008BAFB5 /* AppDelegate.swift */; };
-		5C82EB9120493C74008BAFB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C82EB9020493C74008BAFB5 /* ViewController.swift */; };
+		5C82EB9120493C74008BAFB5 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C82EB9020493C74008BAFB5 /* MainScreenViewController.swift */; };
 		5C82EB9420493C74008BAFB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C82EB9220493C74008BAFB5 /* Main.storyboard */; };
 		5C82EB9620493C74008BAFB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C82EB9520493C74008BAFB5 /* Assets.xcassets */; };
 		5C82EB9920493C74008BAFB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C82EB9720493C74008BAFB5 /* LaunchScreen.storyboard */; };
 		5C82EBA420493C74008BAFB5 /* CashewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C82EBA320493C74008BAFB5 /* CashewTests.swift */; };
 		5C82EBAF20493C74008BAFB5 /* CashewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C82EBAE20493C74008BAFB5 /* CashewUITests.swift */; };
+		5C82EBC6204FD557008BAFB5 /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C82EBC4204FD557008BAFB5 /* CurrencyTableViewCell.swift */; };
+		5C82EBC7204FD557008BAFB5 /* CurrencyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C82EBC5204FD557008BAFB5 /* CurrencyTableViewCell.xib */; };
+		5C82EBC9204FD9D9008BAFB5 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C82EBC8204FD9D9008BAFB5 /* Currency.swift */; };
+		5C82EBCB204FE6BD008BAFB5 /* CurrencyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C82EBCA204FE6BD008BAFB5 /* CurrencyListViewController.swift */; };
+		5C82EBCD204FE8D0008BAFB5 /* CurrencyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C82EBCC204FE8D0008BAFB5 /* CurrencyData.swift */; };
+		71AB9A7C7459E975FA35CC8E /* Pods_Cashew.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D8DB1D5070DB50DDE5514AA /* Pods_Cashew.framework */; };
+		8C4088A6FD6F9AABF6F65CE5 /* Pods_CashewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E7F7421482DFA3A57B3B770 /* Pods_CashewTests.framework */; };
+		8DD6C5ABFF0F0D0077B9B31B /* Pods_CashewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62E834F22C984D2EB8847C0 /* Pods_CashewUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +45,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A4DB78E9BD6E2E097339283 /* Pods-CashewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CashewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CashewTests/Pods-CashewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2A50A5F578522DB947956C11 /* Pods-CashewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CashewUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CashewUITests/Pods-CashewUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5C136CE4205273600069EA0C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5C136CE7205A2D060069EA0C /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		5C68358620512494000046B2 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		5C82EB8B20493C74008BAFB5 /* Cashew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cashew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C82EB8E20493C74008BAFB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5C82EB9020493C74008BAFB5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5C82EB9020493C74008BAFB5 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		5C82EB9320493C74008BAFB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C82EB9520493C74008BAFB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C82EB9820493C74008BAFB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +63,18 @@
 		5C82EBAA20493C74008BAFB5 /* CashewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CashewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C82EBAE20493C74008BAFB5 /* CashewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashewUITests.swift; sourceTree = "<group>"; };
 		5C82EBB020493C74008BAFB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C82EBC4204FD557008BAFB5 /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
+		5C82EBC5204FD557008BAFB5 /* CurrencyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyTableViewCell.xib; sourceTree = "<group>"; };
+		5C82EBC8204FD9D9008BAFB5 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		5C82EBCA204FE6BD008BAFB5 /* CurrencyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListViewController.swift; sourceTree = "<group>"; };
+		5C82EBCC204FE8D0008BAFB5 /* CurrencyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyData.swift; sourceTree = "<group>"; };
+		6CE979F1CCC6E7E89470DDDC /* Pods-CashewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CashewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CashewTests/Pods-CashewTests.release.xcconfig"; sourceTree = "<group>"; };
+		6D8DB1D5070DB50DDE5514AA /* Pods_Cashew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cashew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AD435D98823FBE191DA5C69 /* Pods-CashewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CashewUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CashewUITests/Pods-CashewUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		850BD002C5CCED62A5ADA9A7 /* Pods-Cashew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cashew.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cashew/Pods-Cashew.release.xcconfig"; sourceTree = "<group>"; };
+		9E7F7421482DFA3A57B3B770 /* Pods_CashewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CashewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A62E834F22C984D2EB8847C0 /* Pods_CashewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CashewUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFDE537116103EAB2D00CF16 /* Pods-Cashew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cashew.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cashew/Pods-Cashew.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71AB9A7C7459E975FA35CC8E /* Pods_Cashew.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C4088A6FD6F9AABF6F65CE5 /* Pods_CashewTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +98,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DD6C5ABFF0F0D0077B9B31B /* Pods_CashewUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4782051E9FBFF03E6F9DB1D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BFDE537116103EAB2D00CF16 /* Pods-Cashew.debug.xcconfig */,
+				850BD002C5CCED62A5ADA9A7 /* Pods-Cashew.release.xcconfig */,
+				1A4DB78E9BD6E2E097339283 /* Pods-CashewTests.debug.xcconfig */,
+				6CE979F1CCC6E7E89470DDDC /* Pods-CashewTests.release.xcconfig */,
+				7AD435D98823FBE191DA5C69 /* Pods-CashewUITests.debug.xcconfig */,
+				2A50A5F578522DB947956C11 /* Pods-CashewUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5C82EB8220493C73008BAFB5 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +125,8 @@
 				5C82EBA220493C74008BAFB5 /* CashewTests */,
 				5C82EBAD20493C74008BAFB5 /* CashewUITests */,
 				5C82EB8C20493C74008BAFB5 /* Products */,
+				4782051E9FBFF03E6F9DB1D6 /* Pods */,
+				93C29E62FBBFFC97CF8E1FB9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +143,13 @@
 		5C82EB8D20493C74008BAFB5 /* Cashew */ = {
 			isa = PBXGroup;
 			children = (
-				5C82EB8E20493C74008BAFB5 /* AppDelegate.swift */,
-				5C82EB9020493C74008BAFB5 /* ViewController.swift */,
-				5C82EB9220493C74008BAFB5 /* Main.storyboard */,
+				5C82EBBF20493EEA008BAFB5 /* Model */,
+				5C82EBC120493F16008BAFB5 /* View */,
+				5C82EBC020493F0F008BAFB5 /* Controller */,
 				5C82EB9520493C74008BAFB5 /* Assets.xcassets */,
-				5C82EB9720493C74008BAFB5 /* LaunchScreen.storyboard */,
+				5C82EB8E20493C74008BAFB5 /* AppDelegate.swift */,
 				5C82EB9A20493C74008BAFB5 /* Info.plist */,
+				5C136CE4205273600069EA0C /* GoogleService-Info.plist */,
 			);
 			path = Cashew;
 			sourceTree = "<group>";
@@ -125,6 +172,47 @@
 			path = CashewUITests;
 			sourceTree = "<group>";
 		};
+		5C82EBBF20493EEA008BAFB5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5C82EBC8204FD9D9008BAFB5 /* Currency.swift */,
+				5C82EBCC204FE8D0008BAFB5 /* CurrencyData.swift */,
+				5C136CE7205A2D060069EA0C /* UserSettings.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5C82EBC020493F0F008BAFB5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5C82EB9020493C74008BAFB5 /* MainScreenViewController.swift */,
+				5C82EBCA204FE6BD008BAFB5 /* CurrencyListViewController.swift */,
+				5C68358620512494000046B2 /* TestViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5C82EBC120493F16008BAFB5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5C82EB9220493C74008BAFB5 /* Main.storyboard */,
+				5C82EB9720493C74008BAFB5 /* LaunchScreen.storyboard */,
+				5C82EBC4204FD557008BAFB5 /* CurrencyTableViewCell.swift */,
+				5C82EBC5204FD557008BAFB5 /* CurrencyTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		93C29E62FBBFFC97CF8E1FB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D8DB1D5070DB50DDE5514AA /* Pods_Cashew.framework */,
+				9E7F7421482DFA3A57B3B770 /* Pods_CashewTests.framework */,
+				A62E834F22C984D2EB8847C0 /* Pods_CashewUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +220,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C82EBB320493C74008BAFB5 /* Build configuration list for PBXNativeTarget "Cashew" */;
 			buildPhases = (
+				8AB37C6A582DD7FC86266F00 /* [CP] Check Pods Manifest.lock */,
 				5C82EB8720493C74008BAFB5 /* Sources */,
 				5C82EB8820493C74008BAFB5 /* Frameworks */,
 				5C82EB8920493C74008BAFB5 /* Resources */,
+				91E37B9EF5E6EB88E71F1374 /* [CP] Embed Pods Frameworks */,
+				FF1E9316A77E30BD89413203 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +240,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C82EBB620493C74008BAFB5 /* Build configuration list for PBXNativeTarget "CashewTests" */;
 			buildPhases = (
+				26D15704AAF2BBBA05A7AA60 /* [CP] Check Pods Manifest.lock */,
 				5C82EB9B20493C74008BAFB5 /* Sources */,
 				5C82EB9C20493C74008BAFB5 /* Frameworks */,
 				5C82EB9D20493C74008BAFB5 /* Resources */,
+				9BB7D1286A17140EAD797580 /* [CP] Embed Pods Frameworks */,
+				960C4CBA0E3537755695974A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +261,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C82EBB920493C74008BAFB5 /* Build configuration list for PBXNativeTarget "CashewUITests" */;
 			buildPhases = (
+				FB85679DADB26B30E0C7FF81 /* [CP] Check Pods Manifest.lock */,
 				5C82EBA620493C74008BAFB5 /* Sources */,
 				5C82EBA720493C74008BAFB5 /* Frameworks */,
 				5C82EBA820493C74008BAFB5 /* Resources */,
+				87E45CB72523D059180A2AF5 /* [CP] Embed Pods Frameworks */,
+				5B1D28D3D1A106E9FC7DBEE1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,6 +330,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C82EB9920493C74008BAFB5 /* LaunchScreen.storyboard in Resources */,
+				5C82EBC7204FD557008BAFB5 /* CurrencyTableViewCell.xib in Resources */,
+				5C136CE5205273600069EA0C /* GoogleService-Info.plist in Resources */,
 				5C82EB9620493C74008BAFB5 /* Assets.xcassets in Resources */,
 				5C82EB9420493C74008BAFB5 /* Main.storyboard in Resources */,
 			);
@@ -254,12 +353,182 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		26D15704AAF2BBBA05A7AA60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CashewTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B1D28D3D1A106E9FC7DBEE1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CashewUITests/Pods-CashewUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87E45CB72523D059180A2AF5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CashewUITests/Pods-CashewUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AB37C6A582DD7FC86266F00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cashew-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91E37B9EF5E6EB88E71F1374 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Cashew/Pods-Cashew-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/libwebp/libwebp.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libwebp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cashew/Pods-Cashew-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		960C4CBA0E3537755695974A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CashewTests/Pods-CashewTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BB7D1286A17140EAD797580 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CashewTests/Pods-CashewTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB85679DADB26B30E0C7FF81 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CashewUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF1E9316A77E30BD89413203 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cashew/Pods-Cashew-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5C82EB8720493C74008BAFB5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C82EB9120493C74008BAFB5 /* ViewController.swift in Sources */,
+				5C68358720512494000046B2 /* TestViewController.swift in Sources */,
+				5C82EBCD204FE8D0008BAFB5 /* CurrencyData.swift in Sources */,
+				5C82EBCB204FE6BD008BAFB5 /* CurrencyListViewController.swift in Sources */,
+				5C82EBC9204FD9D9008BAFB5 /* Currency.swift in Sources */,
+				5C82EB9120493C74008BAFB5 /* MainScreenViewController.swift in Sources */,
+				5C136CE8205A2D060069EA0C /* UserSettings.swift in Sources */,
+				5C82EBC6204FD557008BAFB5 /* CurrencyTableViewCell.swift in Sources */,
 				5C82EB8F20493C74008BAFB5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,13 +693,15 @@
 		};
 		5C82EBB420493C74008BAFB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFDE537116103EAB2D00CF16 /* Pods-Cashew.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 52K7VBPAG2;
 				INFOPLIST_FILE = Cashew/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = roboOrg.com.Cashew;
+				PRODUCT_BUNDLE_IDENTIFIER = house603.com.Cashew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -439,13 +710,15 @@
 		};
 		5C82EBB520493C74008BAFB5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 850BD002C5CCED62A5ADA9A7 /* Pods-Cashew.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 52K7VBPAG2;
 				INFOPLIST_FILE = Cashew/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = roboOrg.com.Cashew;
+				PRODUCT_BUNDLE_IDENTIFIER = house603.com.Cashew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -454,6 +727,7 @@
 		};
 		5C82EBB720493C74008BAFB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A4DB78E9BD6E2E097339283 /* Pods-CashewTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +745,7 @@
 		};
 		5C82EBB820493C74008BAFB5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CE979F1CCC6E7E89470DDDC /* Pods-CashewTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +763,7 @@
 		};
 		5C82EBBA20493C74008BAFB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AD435D98823FBE191DA5C69 /* Pods-CashewUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +780,7 @@
 		};
 		5C82EBBB20493C74008BAFB5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A50A5F578522DB947956C11 /* Pods-CashewUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
