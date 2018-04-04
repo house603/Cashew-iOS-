@@ -173,84 +173,62 @@ class MainScreenViewController: UIViewController {
         txtBottom.text = String(format: "%.2f",amount)
     }
     
-    func didGetHistoricalData(_ toISOData: [String: Any], _ fromISOData: [String: Any]) -> (){
+    func didGetHistoricalData(_ toISOData: [(key: String, value: Double)]) -> (){
         // Show chart here
-//        var dates = [String]()
-//        var topISOValues : [BarChartDataEntry] = [BarChartDataEntry]()
-//        //var bottomISOValues : [ChartDataEntry] = [ChartDataEntry]()
-//        var i = 0
-//        for (key,value) in toISOData {
-//            dates.append(key)
-//            let dataEntry = BarChartDataEntry(x: Double(i + 1), y: value as! Double)
-//            topISOValues.append(dataEntry)
-//            //topISOValues.append(ChartDataEntry(x: Double(i + 1), y: value as! Double))
-//            i = i+1
-//        }
-//        let chartDataSet = BarChartDataSet(values: topISOValues, label: "\(topISO.text!) to \(bottomISO.text!) ")
-//        chartDataSet.colors = ChartColorTemplates.material()
-//        let chartData = BarChartData(dataSet: chartDataSet)
-//        barChart.data = chartData
-//        barChart.xAxis.valueFormatter = IndexAxisValueFormatter(values: dates)
-//        barChart.xAxis.granularityEnabled = true
-//        barChart.xAxis.granularity = 3.0
-//        barChart.xAxis.labelPosition = .bottom
-//        barChart.xAxis.centerAxisLabelsEnabled = true
-//        barChart.rightAxis.enabled = false
-//        barChart.chartDescription?.enabled = false
-//        barChart.animate(xAxisDuration: 3.0, yAxisDuration: 3.0, easingOption: .easeInBounce)
-//        barChart.xAxis.setLabelCount(dates.count, force: true)
-        
         var dates = [String]()
         var topISOValues : [ChartDataEntry] = [ChartDataEntry]()
-        var bottomISOValues : [ChartDataEntry] = [ChartDataEntry]()
-        var i = 0
-        for (key,value) in toISOData {
-            dates.append(key)
-            topISOValues.append(ChartDataEntry(x: Double(i + 1), y: value as! Double))
-            i = i+1
+        for i in 0..<toISOData.count {
+            // get only month and day from key. E.g 2018-03-20 -> 03-20
+            let date = toISOData[i].key
+            let subStringIndex = date.index(date.startIndex, offsetBy: 5)
+            let subString = date[subStringIndex...]
+            print("substring: \(subString)")
+            dates.append(String(subString))
+            topISOValues.append(ChartDataEntry(x: Double(i), y: toISOData[i].value))
         }
-//        let chartDataSet = LineChartDataSet(values: topISOValues, label: "\(topISO.text!) to \(bottomISO.text!) ")
-//        chartDataSet.colors = ChartColorTemplates.material()
-//        let chartData = LineChartData(dataSet: chartDataSet)
-//        lineChart.data = chartData
-//        lineChart.xAxis.valueFormatter = IndexAxisValueFormatter(values: dates)
-//        lineChart.xAxis.granularityEnabled = true
-//        lineChart.xAxis.granularity = 3.0
-//        lineChart.xAxis.labelPosition = .bottom
-//        lineChart.xAxis.centerAxisLabelsEnabled = true
-//        lineChart.rightAxis.enabled = false
-//        lineChart.chartDescription?.enabled = false
-//        lineChart.animate(xAxisDuration: 3.0, yAxisDuration: 3.0, easingOption: .easeInBounce)
-//        lineChart.xAxis.setLabelCount(dates.count, force: true)
+//        var i = 0
+//        for (key,value) in toISOData {
+//            print(i)
+//            print("\(key) : \(value)")
+//            dates.append(key)
+//            topISOValues.append(ChartDataEntry(x: Double(i + 1), y: value))
+//            i = i + 1
+//        }
+        
+        
 
         
-        var j = 0
-        for (_,value) in fromISOData {
-            bottomISOValues.append(ChartDataEntry(x: Double(j + 1), y: value as! Double))
-            j = j+1
-        }
+        
+//        lineChart.xAxis.granularityEnabled = true
+//        lineChart.xAxis.granularity = 1.0
+        
         lineChart.xAxis.valueFormatter = IndexAxisValueFormatter(values: dates)
-        //lineChart.xAxis.valueFormatter = DefaultAxisValueFormatter { (value, axis) -> String in return dates[Int(value)] }
-        lineChart.xAxis.granularity = 1
-        lineChart.xAxis.centerAxisLabelsEnabled = true
-        let topDataSet = LineChartDataSet(values: topISOValues, label: bottomISO.text!)
-        topDataSet.colors = ChartColorTemplates.vordiplom()
-        let bottomDataSet = LineChartDataSet(values: bottomISOValues, label: topISO.text!)
-        bottomDataSet.colors = ChartColorTemplates.material()
-        //let data = LineChartData(dataSets: [topDataSet, bottomDataSet])
+        //lineChart.xAxis.centerAxisLabelsEnabled = true
+        //lineChart.xAxis.labelPosition = .bottom
+        lineChart.xAxis.labelPosition = XAxis.LabelPosition(rawValue: 1)!
+
+        //lineChart.xAxis.setLabelCount(dates.count, force: false)
+        lineChart.xAxis.labelRotationAngle = -45
+//        lineChart.xAxis.granularityEnabled = true
+//        lineChart.xAxis.granularity = 1.0
+        lineChart.xAxis.labelCount = dates.count
+//        lineChart.xAxis.avoidFirstLastClippingEnabled = true
+        lineChart.scaleXEnabled = false
+        lineChart.scaleYEnabled = false
+
+        let topDataSet = LineChartDataSet(values: topISOValues, label: "")
+        topDataSet.setColor(.black)
         let data = LineChartData(dataSet: topDataSet)
         lineChart.data = data
-        bottomDataSet.drawCircleHoleEnabled = false
-        bottomDataSet.circleRadius = 3
         topDataSet.drawCircleHoleEnabled = false
+        topDataSet.setCircleColor(.red)
         topDataSet.circleRadius = 3
-        lineChart.chartDescription?.enabled = false
-        lineChart.legend.enabled = true
-
-        lineChart.xAxis.drawGridLinesEnabled = false
-        lineChart.xAxis.labelPosition = .bottom
+        topDataSet.lineWidth = CGFloat(1.0)
+        lineChart.chartDescription?.text =  ""
+//        lineChart.chartDescription?.font = UIFont.boldSystemFont(ofSize: 10.0)
+        lineChart.legend.enabled = false
         lineChart.rightAxis.enabled = false
-        lineChart.xAxis.setLabelCount(dates.count, force: true)
+       // lineChart.fitScreen()
         
         // This must always be at the end of function
         lineChart.notifyDataSetChanged()

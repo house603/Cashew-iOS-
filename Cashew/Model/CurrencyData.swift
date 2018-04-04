@@ -14,7 +14,7 @@ class CurrencyData {
     
     var didGetCurrencies: ((_ currencies: [Currency]) -> ())?
     var didFinishConversion: ((_ amount: Double) -> ())?
-    var didGetHistoricalData: ((_ toISOData: [String: Any], _ fromISOData: [String: Any]) -> ())?
+    var didGetHistoricalData: ((_ toISOData: [(key: String, value: Double)]) -> ())?
     var apiUrl = "https://free.currencyconverterapi.com/api/v5/"
     
     func loadCurrencies(){
@@ -48,7 +48,6 @@ class CurrencyData {
                     print("Invalid info received2")
                     return
                 }
-                print(valueHolder)
                 guard let value = valueHolder["val"] as? Double else{
                     print("Invalid conversion")
                     return
@@ -76,7 +75,8 @@ class CurrencyData {
     
     func getHistoricalData(_ from: String, _ to: String){
         let startAndEndDates = calcStartAndEndDatesForChart()
-        let endPoint = "convert?q=\(from)_\(to),\(to)_\(from)&compact=ultra&date=\(startAndEndDates[0])&endDate=\(startAndEndDates[1])"
+        let endPoint = "convert?q=\(from)_\(to)&compact=ultra&date=\(startAndEndDates[0])&endDate=\(startAndEndDates[1])"
+//        let endPoint = "convert?q=\(from)_\(to),\(to)_\(from)&compact=ultra&date=\(startAndEndDates[0])&endDate=\(startAndEndDates[1])"
         Alamofire.request(URL(string: "\(apiUrl)\(endPoint)")!).responseJSON { (response) in
             guard response.result.isSuccess else {
                 print("Error while fetching value: \(String(describing: response.result.error))")
@@ -86,15 +86,21 @@ class CurrencyData {
                 print("Invalid info received")
                 return
             }
-            guard let toISOData = result["\(from)_\(to)"] as? [String: Any] else {
+            print("result: \(result)")
+            guard let toISOData = result["\(from)_\(to)"] as? [String: Double] else {
                 print("Invalid info received2")
                 return
             }
-            guard let fromISOData = result["\(to)_\(from)"] as? [String: Any] else {
-                print("Invalid info received3")
-                return
-            }
-            self.didGetHistoricalData?(toISOData,fromISOData)
+            print("toISOData: \(toISOData)")
+            let isoDataSorted = toISOData.sorted(by: { (firstDic, secondDic) -> Bool in
+                return firstDic.key < secondDic.key
+            })
+            print("isoDataSorted: \(isoDataSorted)")
+//            guard let fromISOData = result["\(to)_\(from)"] as? [String: Any] else {
+//                print("Invalid info received3")
+//                return
+//            }
+            self.didGetHistoricalData?(isoDataSorted)
         }
 
     }

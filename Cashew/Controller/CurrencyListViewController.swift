@@ -63,9 +63,6 @@ class CurrencyListViewController: UIViewController {
         searchController.searchBar.placeholder = "Search"
         searchController.searchBar.returnKeyType = .done
         searchController.searchBar.enablesReturnKeyAutomatically = false
-//        let textFieldInsideSearchBar = searchController.searchBar.value(forKey: "searchField") as? UITextField
-//        textFieldInsideSearchBar?.textColor = .white
-//        searchController.searchBar.tintColor = .white
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
         navigationItem.title = "Choose currency"

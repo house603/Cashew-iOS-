@@ -21,22 +21,28 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="8Ql-Db-LLD">
                         <rect key="frame" x="15" y="2" width="60" height="52"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="52" id="C57-Pc-kwC"/>
-                            <constraint firstAttribute="width" constant="60" id="mPd-wV-D6c"/>
+                            <constraint firstAttribute="height" constant="52" id="C57-Pc-kwC">
+                                <variation key="heightClass=regular-widthClass=regular" constant="104"/>
+                            </constraint>
+                            <constraint firstAttribute="width" constant="60" id="mPd-wV-D6c">
+                                <variation key="heightClass=regular-widthClass=regular" constant="122"/>
+                            </constraint>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Netherlands Antillean Guilder" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R4E-HG-Bha">
-                        <rect key="frame" x="93" y="4" width="291" height="24"/>
+                        <rect key="frame" x="93" y="4" width="286" height="24"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="24" id="vul-Ot-yKf"/>
+                            <constraint firstAttribute="height" constant="24" id="vul-Ot-yKf">
+                                <variation key="heightClass=regular-widthClass=regular" constant="70"/>
+                            </constraint>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ANG" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="chw-ju-W6c">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ANG" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="chw-ju-W6c">
                         <rect key="frame" x="93" y="31" width="276" height="19.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -49,7 +55,7 @@
                     <constraint firstAttribute="bottom" secondItem="chw-ju-W6c" secondAttribute="bottom" constant="5" id="GHn-Ju-HFy"/>
                     <constraint firstItem="8Ql-Db-LLD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="YbX-nY-NyD"/>
                     <constraint firstAttribute="trailing" secondItem="chw-ju-W6c" secondAttribute="trailing" constant="15" id="ZGA-6l-7CM"/>
-                    <constraint firstAttribute="trailing" secondItem="R4E-HG-Bha" secondAttribute="trailing" id="q1O-Mo-u4g"/>
+                    <constraint firstAttribute="trailing" secondItem="R4E-HG-Bha" secondAttribute="trailing" constant="5" id="q1O-Mo-u4g"/>
                     <constraint firstItem="R4E-HG-Bha" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="qdQ-ou-EHa"/>
                     <constraint firstAttribute="bottom" secondItem="8Ql-Db-LLD" secondAttribute="bottom" constant="2" id="rGc-bW-xHT"/>
                     <constraint firstItem="chw-ju-W6c" firstAttribute="leading" secondItem="8Ql-Db-LLD" secondAttribute="trailing" constant="18" id="vFe-6Y-9AY"/>
